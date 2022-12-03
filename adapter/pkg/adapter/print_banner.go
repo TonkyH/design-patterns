@@ -1,8 +1,8 @@
 package adapter
 
 import (
-	"adapter/pkg/class/banner"
-	"adapter/pkg/class/print"
+	"adapter/pkg/banner"
+	"adapter/pkg/print"
 )
 
 type Adapter struct {

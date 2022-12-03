@@ -1,6 +1,6 @@
 package main
 
-import "adapter/pkg/class/adapter"
+import "adapter/pkg/adapter"
 
 func main() {
 	printAdapter := adapter.NewAdapter("Hello")
