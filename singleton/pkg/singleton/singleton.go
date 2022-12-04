@@ -1,11 +1,5 @@
 package singleton
 
-import (
-	"sync"
-)
-
-var lock = &sync.Mutex{}
-
 type Singleton struct {
 	Title string
 }
