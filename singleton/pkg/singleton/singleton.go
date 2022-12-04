@@ -1,6 +1,8 @@
 package singleton
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Singleton struct {
 	Title string
@@ -12,7 +14,7 @@ func NewSingleton(title string) *Singleton {
 	if singletonInstance == nil {
 		singletonInstance = &Singleton{Title: title}
 	} else {
-        fmt.Println("singletonInstance is already exist")
+		fmt.Println("singletonInstance is already exist")
 	}
 	return singletonInstance
 }
