@@ -8,6 +8,8 @@ const (
 	PAPER
 )
 
+var hands = []Hand{ROCK, SCISSORS, PAPER}
+
 func (h Hand) fight(hand Hand) int64 {
 	if h == hand {
 		return 0
@@ -37,4 +39,8 @@ func (h Hand) String() string {
 	default:
 		return "Unknown"
 	}
+}
+
+func GetHand(handValue int64) Hand {
+    return hands[handValue]
 }
